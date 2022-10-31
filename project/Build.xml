@@ -1,0 +1,36 @@
+<xml>
+
+<pragma once="true" />
+
+<set name="id" value="com.polydes.reviewdialog" />
+
+<error value="The ${id} extension only provides native code for iOS" unless="ios" />
+
+<files id="${id}-dependencies">
+  <depend files="hxcpp-depends" />
+  <depend name="${this_dir}/Build.xml" dateOnly="true" />
+  <depend name="${this_dir}/include/ReviewDialog.h" />
+</files>
+
+<files id="${id}-common" dir="${this_dir}">
+  <depend files="${id}-dependencies" />
+  <cache value="1" project="${id}" asLibrary="true" />
+  <compilerflag value="-I${this_dir}/include" />
+  <file name="common/ExternalInterface.cpp" />
+</files>
+
+<files id="${id}-ios" dir="${this_dir}">
+  <depend files="${id}-dependencies" />
+  <cache value="1" project="${id}" asLibrary="true" />
+  <compilerflag value="-I${this_dir}/include" />
+  <file name="ios/ReviewDialog.mm" />
+</files>
+
+<target id="haxe">
+  <files id="com.polydes.reviewdialog-common" />
+  <files id="com.polydes.reviewdialog-ios" if="ios" />
+</target>
+
+<unset name="id" />
+
+</xml>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<palette>
+
+	<block
+		tag="request-review"
+		spec="request an app review"
+		code="com.polydes.reviewdialog.ReviewDialog.requestReview();"
+		type="action"
+		color="charcoal"
+		returns="void">
+		<fields>
+		</fields>
+	</block>
+
+</palette>

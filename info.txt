@@ -1,0 +1,8 @@
+name=Review Dialog
+id=com.polydes.reviewdialog
+description=Ask users to submit a review of your app
+author=Justin Espedal
+website=http://www.stencyl.com
+version=1.0
+compatibility=ios
+dependencies=stencyl-4.1.0-b10658
