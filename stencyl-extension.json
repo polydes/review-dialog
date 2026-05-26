@@ -1,0 +1,19 @@
+{
+  "group": "com.polydes",
+  "id": "com.polydes.reviewdialog",
+  "name": "Review Dialog",
+  "description": "Ask users to submit a review of your app",
+  "tags": ["engagement"],
+  "type": "game",
+  "author": "Justin Espedal",
+  "website": "https://www.polydes.com/repo/engine/com.polydes.reviewdialog",
+  "repository": "https://www.polydes.com/repo",
+  "target": "stencyl-4.2.0",
+  "version": "1.1.0",
+
+  "icon": "icon.png",
+
+  "engine": {
+    "compatibility": "ios"
+  }
+}
