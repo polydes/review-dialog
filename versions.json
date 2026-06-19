@@ -1,0 +1,11 @@
+{
+  "versions":
+  [
+    {
+      "date": "11/01/2022",
+      "changes": "Initial version.",
+      "version": "1.0.0",
+      "dependencies": "stencyl-4.1.0-b10658"
+    }
+  ]
+}
